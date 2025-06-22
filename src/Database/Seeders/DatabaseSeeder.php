@@ -1,9 +1,9 @@
 <?php
 
-namespace Branzia\Shop\Database\Seeders;
+namespace Branzia\Tax\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-
+use Branzia\Tax\Database\Seeders\TaxClassSeeder;
 class DatabaseSeeder extends Seeder
 {
     /**

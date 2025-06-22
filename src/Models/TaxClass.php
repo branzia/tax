@@ -4,6 +4,7 @@ namespace Branzia\Tax\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Branzia\Customer\Models\customerGroups;
 class TaxClass extends Model
 {
     protected $table = 'tax_classes';
@@ -31,4 +32,6 @@ class TaxClass extends Model
     {
         return $this->hasMany(TaxRate::class);
     }
+
+
 }

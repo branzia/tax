@@ -5,7 +5,7 @@ namespace Branzia\Tax\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Branzia\Shop\Models\TaxClass;
+use Branzia\Tax\Models\TaxClass;
 class TaxClassSeeder extends Seeder
 {
     /**
@@ -22,8 +22,8 @@ class TaxClassSeeder extends Seeder
             ['name' => 'Printed Gift Card', 'type' => 'product'],
             ['name' => 'Reward Points', 'type' => 'product'],
             ['name' => 'Shipping', 'type' => 'shipping'],
+            ['name' => 'Retail Customer', 'type' => 'customer'],
         ];
-
         foreach ($defaultClasses as $class) {
             TaxClass::firstOrCreate(
                 ['name' => $class['name']],

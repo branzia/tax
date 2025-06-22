@@ -17,8 +17,7 @@
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "Branzia\\Tax\\": "src/",
-      "Branzia\\Tax\\Database\\Seeders\\": "database/seeders/"
+      "Branzia\\Tax\\": "src/"
     }
   },
   "extra": {
