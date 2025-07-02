@@ -82,8 +82,6 @@ class TaxServiceProvider extends BranziaServiceProvider
         CustomerGroup::resolveRelationUsing('taxClass', function ($model) {
             return $model->belongsTo(TaxClass::class, 'tax_class_id');
         });
-           
-       
     }
 
     public function register(): void
@@ -113,5 +111,6 @@ class TaxServiceProvider extends BranziaServiceProvider
             'after' => 'code', //  Position it after 'code' column
         ]]);  
     }
+
 }
 
